@@ -1,0 +1,45 @@
+/* TaskListmodule.css */
+
+/* Estilo para la lista */
+.itemsContainer {
+  width: 85vw;
+  margin: auto;
+  padding: 0;
+  font-size: 1rem;
+}
+
+/* Estilo para cada tarea */
+.itemStyle {
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 100%;
+  margin: 10px auto;
+  padding: .5rem 1rem;
+  background-color: aliceblue;
+}
+
+
+.itemStyle i{
+  color: gray;
+  font-size: .85rem;
+}
+
+.actionsContainer{
+  width: 10%;
+}
+
+.actionsContainer button{
+  margin: .5rem;
+}
+
+.taskDescriptionContainer{
+  width: 90%;
+}
+
+.taskDescriptionContainer p{
+  font-size: .9rem;
+}
+

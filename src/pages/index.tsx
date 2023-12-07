@@ -1,21 +1,19 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
+import React from 'react';
+import TaskList from '../features/tasks-list-redux/TaskList';
+import { useRouter } from 'next/router';
+import styles from '../styles/Home.module.css';
 
-import styles from '../styles/Home.module.css'
+const Home = () => {
 
-const IndexPage: NextPage = () => {
+  const router = useRouter();
+
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Autority Challenge</title>
-      </Head>
-      <header className={styles.header}>
-        <p>
-          Edit <code>src/App.tsx</code> for your logic
-        </p>
-      </header>
+    <div>
+      <h1 className={styles.sectionTitle}>Todas las Tareas</h1>
+      <button className={styles.button} onClick={() => router.push("/task")}>agregar tarea</button>
+      <TaskList />
     </div>
-  )
-}
+  );
+};
 
-export default IndexPage
+export default Home;

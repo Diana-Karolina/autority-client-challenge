@@ -20,6 +20,43 @@
   color: rgb(112, 76, 182);
 }
 
+/* TaskStyle.module.css */
+
+/* Otros estilos que puedas tener */
+.sectionTitle{
+  font-size: 2rem;
+  text-align: center;
+  width: 100%;
+}
+
+/* Estilo para el contenedor del botón */
+.buttonContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* Estilo para el botón */
+.button {
+  background: linear-gradient(to right, #4CAF50, #45a049);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-left: 5vw;
+}
+
+.button:hover {
+  background: linear-gradient(to right, #45a049, #4CAF50);
+}
+
+
 @media (prefers-reduced-motion: no-preference) {
   .logo {
     animation: logo-float infinite 3s ease-in-out;

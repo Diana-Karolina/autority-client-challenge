@@ -1,0 +1,66 @@
+/* styles.css */
+.container form {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  margin: 2rem auto;
+  width: 50vw;
+  min-width: 300px;
+  max-width: 1080px;
+}
+
+.formItem {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  font-size: 1.25rem;
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.formItem input,
+.formItem textarea {
+  border: 1px solid gray;
+  border-radius: 4px;
+  padding: 0.25rem 0.5rem;
+  outline: none;
+  resize: none;
+  width: 100%;
+}
+
+.formItem textarea {
+  height: 100px;
+}
+
+.formItem label {
+  width: 100%;
+}
+
+.legend{
+  margin: auto;
+  text-align: center;
+}
+
+.sutBoton {
+  background: linear-gradient(to right, #4CAF50, #45a049);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.sutBoton:hover {
+  background: linear-gradient(to right, #45a049, #4CAF50);
+}
+
+.sutBoton:active,
+.sutBoton:focus {
+  background: rgb(100, 100, 100); /* Cambia el color al hacer clic o enfocar */
+}

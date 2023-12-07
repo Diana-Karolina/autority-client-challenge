@@ -1,10 +1,13 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit'
 
 import counterReducer from '../features/counter-reference-redux/counterSlice'
+import createTaskReducer from '../features/task-list-create-redux/TaskCreateSlice'
+import editTaskReducer from '../features/task-list-edit-redux/TaskEditSlice'
+import allTaskReducer from '../features/tasks-list-redux/taskListSlice'
 
 export function makeStore() {
   return configureStore({
-    reducer: { counter: counterReducer },
+    reducer: { counter: counterReducer, createTask: createTaskReducer, editTask: editTaskReducer, allTask: allTaskReducer},
   })
 }
 
